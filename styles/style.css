@@ -139,10 +139,6 @@ main>section {
     gap: 90px;
 }
 
-.enjoy-content {
-    max-width: 586px;
-}
-
 .enjoy-content-title {
     border-left: 5px solid rgb(255, 144, 14);
     padding-left: 20px;
@@ -174,7 +170,56 @@ main>section {
     color: rgb(114, 114, 114);
 }
 
-.enjoy-img {}
+.enjoy-img-container {
+    position: relative;
+}
+
+.extra-card {
+    position: absolute;
+    left: -40px;
+    bottom: -30px;
+}
+
+/* fact styles */
+.fact-div {
+    max-width: 542px;
+    margin-bottom: 70px;
+}
+
+.fact-container-title {
+    color: rgb(19, 19, 19);
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.fact-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 120px;
+}
+
+.fact {
+    border: 1px solid rgb(255, 144, 14);
+    border-radius: 8px;
+    padding: 45px 35px;
+    text-align: center;
+}
+
+.fact-number {
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin: 10px;
+}
+
+.fact-name {
+    color: rgb(114, 114, 114);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+
 
 /* responsive small device */
 @media screen and (max-width: 576px) {
@@ -183,7 +228,6 @@ main>section {
         gap: 20px;
     }
 
-    /* features and teams */
     .teams {
         flex-direction: column;
         margin: 0 20px;
@@ -198,7 +242,6 @@ main>section {
         width: 100%;
     }
 
-    /* enjoy section */
     .enjoy-container {
         flex-direction: column;
         margin: 0 20px;
@@ -207,7 +250,18 @@ main>section {
     .enjoy-img {
         width: 100%;
     }
+
+    .fact-div {
+        margin: 20px;
+    }
+
+    .fact-content {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+        margin: 0 20px;
+    }
 }
+
 
 /* responsive medium device */
 @media screen and (min-width: 577px) and (max-width: 992px) {
@@ -231,5 +285,14 @@ main>section {
 
     .enjoy-img {
         width: 100%;
+    }
+    .fact-div {
+        margin: 20px;
+    }
+
+    .fact-content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        margin: 0 20px;
     }
 }
