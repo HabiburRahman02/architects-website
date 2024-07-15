@@ -218,6 +218,36 @@ main>section {
     font-weight: 600;
 }
 
+/* sponsors styles */
+.sponsors{
+    margin-bottom: 80px;
+}
+.sponsors-content {
+    max-width: 542px;
+    margin: 0 auto;
+    text-align: center;
+}
+.sponsors-title{
+    font-size: 2.8rem;
+    margin-bottom: 24px;
+    font-weight: 700;
+}
+
+.sponsors-des{
+    color: rgb(114, 114, 114);
+    margin-bottom: 50px;
+}
+
+.sponsors-images{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 150px;
+}
+
+.sponsors-images img{
+    filter: grayscale(100%);
+}
+
 
 
 
@@ -286,6 +316,7 @@ main>section {
     .enjoy-img {
         width: 100%;
     }
+
     .fact-div {
         margin: 20px;
     }
