@@ -11,12 +11,12 @@ body {
 
 /* shared styles */
 main {
-    max-width: 1140px;
+    max-width: 1440px;
     margin: 0 auto;
 }
 
 main>section {
-    margin-top: 130px;
+    margin-top: 80px;
 }
 
 .display-flex {
@@ -132,21 +132,104 @@ main>section {
     margin-bottom: 2rem;
 }
 
+/* enjoy styles*/
+.enjoy-container {
+    display: flex;
+    align-items: center;
+    gap: 90px;
+}
+
+.enjoy-content {
+    max-width: 586px;
+}
+
+.enjoy-content-title {
+    border-left: 5px solid rgb(255, 144, 14);
+    padding-left: 20px;
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.enjoy-content-des {
+    color: rgb(114, 114, 114);
+    margin-bottom: 60px;
+}
+
+.enjoy {
+    padding: 30px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    background: rgb(255, 255, 255);
+}
+
+.enjoy-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.enjoy-des {
+    color: rgb(114, 114, 114);
+}
+
+.enjoy-img {}
+
 /* responsive small device */
 @media screen and (max-width: 576px) {
     .navbar {
         flex-direction: column;
         gap: 20px;
     }
-    .teams{
+
+    /* features and teams */
+    .teams {
         flex-direction: column;
-        margin:0 10px;
+        margin: 0 20px;
     }
-    .team-img-container{
-        grid-template-columns: repeat(1,1fr);
+
+    .team-img-container {
+        grid-template-columns: repeat(1, 1fr);
         margin-top: 30px;
     }
-    .team-img-container img{
-        width:100%;
+
+    .team-img-container img {
+        width: 100%;
+    }
+
+    /* enjoy section */
+    .enjoy-container {
+        flex-direction: column;
+        margin: 0 20px;
+    }
+
+    .enjoy-img {
+        width: 100%;
+    }
+}
+
+/* responsive medium device */
+@media screen and (min-width: 577px) and (max-width: 992px) {
+    .teams {
+        flex-direction: column;
+    }
+
+    .team-img-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .team-img-container img {
+        width: 100%;
+    }
+
+    /* enjoy section */
+    .enjoy-container {
+        flex-direction: column;
+        margin: 0 20px;
+    }
+
+    .enjoy-img {
+        width: 100%;
     }
 }
